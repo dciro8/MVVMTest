@@ -45,6 +45,13 @@ namespace MVVMTest.ViewModels
                 Application.Current.MainPage.DisplayAlert("Incorrecto", "No Logrado", "Cancel");
             }
 
+            var user = new MVVMTest.Models.User
+            {
+                Email=EmailText.ToLower(),
+                Password=password.ToLower(),
+                Firstname
+            };
+
         }
         #endregion
         #region Constructor
